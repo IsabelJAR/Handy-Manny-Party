@@ -1,0 +1,65 @@
+body {
+  background-color: #98fb98;
+}
+
+.contentWrapper {
+  margin: auto;
+  width: 30%;
+  padding: 10px;
+  text-align: center;
+  background-color: white;
+}
+
+.title {
+  margin: auto;
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+  color: red;
+  font-size: 20px;
+}
+
+#intro {
+  font-family: sans-serif;
+}
+
+#party {
+  font-size: 30px;
+  font-family: cursive;
+}
+
+.information {
+  margin: auto;
+  width: 60%;
+  padding: 3px;
+  text-align: center;
+  font-size: 17px;
+  color: red;
+  font-weight: bold;
+}
+
+.message {
+  margin: auto;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  font-family: cursive;
+  font-size: 17px;
+  background: red;
+  color: #98fb98;
+  font-weight: bold;
+}
+
+.img {
+  margin: auto;
+  width: 60%;
+  padding: 3px;
+  text-align: center;
+}
+
+#submit {
+  margin: 3px;
+  border: 1px black solid;
+  background-color: blue;
+  color: white;
+}

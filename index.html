@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Manny's Birthday Bash</title>
+
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <script>
+    //functions to clear and reset the name field
+    function clearName() {
+      if (document.getElementById('nameField').value == 'First and Last Name') {
+        document.getElementById('nameField').value = '';
+      }
+    }
+
+    function resetName() {
+      if (document.getElementById('nameField').value == '') {
+        document.getElementById('nameField').value = 'First and Last Name';
+      }
+    }
+    //functions to clear and reset the attendance field
+    function clearAttendance() {
+      if (document.getElementById('attendanceField').value == 'example: Y/N') {
+        document.getElementById('attendanceField').value = '';
+      }
+    }
+
+    function resetAttendance() {
+      if (document.getElementById('attendanceField').value == '') {
+        document.getElementById('attendanceField').value = 'example: Y/N';
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <!--header-->
+  <div class="title">
+    <h2 id="intro">You're invited too ...</h2>
+    <h1 id="party">Handy Manny's Holiday Party</h1>
+  </div>
+
+  <!--image-->
+  <div class="img">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLjBzQ5c8Q4rGB-tI-1IJ4kks3G_3dFBJdJw&usqp=CAU" alt="Picture of Handy Manny">
+    <h6>Source: <a href="https://www.disneyclips.com/images6/handymanny.html">https://www.disneyclips.com/images6/handymanny.html</a></h6>
+  </div>
+
+  <!--info-->
+  <div>
+    <table class="information">
+      <tr>
+        <td>December 19, 2021</td>
+      </tr>
+      <tr>
+        <td>3:00 @ Handy Manny’s Repair Shop</td>
+      </tr>
+      <tr>
+        <td>5 Main Street, Sheetrock Hills</td>
+      </tr>
+      <tr>
+        <td>. . .</td>
+      </tr>
+      <tr>
+        <td>Be ready to have fun :)</td>
+      </tr>
+    </table>
+  </div>
+
+  <!--RSVP-->
+  <div class="contentWrapper">
+    <form action="" method="post" name="signUpForm" id="signUpForm">
+      <fieldset id="signUp">
+        <legend>RSVP</legend>
+        <label for="nameField">Name:</label>
+        <input id="nameField" name="nameField" type="text" class="textfield" value="First and Last Name" onFocus="clearName();" onBlur="resetName();">
+        <br>
+        <label for="attendanceField">Attendance:</label>
+        <input id="attendanceField" name="attendanceField" type="text" class="textfield" value="example: Y/N" onFocus="clearAttendance();" onBlur="resetAttendance();">
+        <br>
+        <input id="submit" type="submit" name="submit" value="Send RSVP">
+      </fieldset>
+    </form>
+  </div>
+
+  <!--Message-->
+  <div>
+    <p class="message">
+      We hope to see you there!
+    </p>
+  </div>
+
+</body>
+
+</html>
